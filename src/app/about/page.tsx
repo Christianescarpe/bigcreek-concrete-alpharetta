@@ -7,7 +7,7 @@ import PageSectionsRenderer from '@/components/PageSectionsRenderer';
 const pageData = getPageBySlug('/about/')!;
 
 export const metadata: Metadata = {
-  title: pageData?.seoTitle || 'About BigCreek Concrete Alpharetta | Alpharetta, GA Concrete Contractor',
+  title: pageData?.seoTitle || 'About BigCreek Concrete Alpharetta',
   description: pageData?.metaDesc || 'Learn about BigCreek Concrete Alpharetta, an Alpharetta, GA concrete contractor focused on quality prep, honest advice and durable residential and commercial work.',
 };
 

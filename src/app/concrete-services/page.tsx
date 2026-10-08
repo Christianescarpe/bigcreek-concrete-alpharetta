@@ -7,7 +7,7 @@ import PageSectionsRenderer from '@/components/PageSectionsRenderer';
 const pageData = getPageBySlug('/concrete-services/')!;
 
 export const metadata: Metadata = {
-  title: pageData?.seoTitle || 'Concrete Services in Alpharetta, GA | BigCreek Concrete Alpharetta',
+  title: pageData?.seoTitle || 'Concrete Services in Alpharetta, GA',
   description: pageData?.metaDesc || 'Explore concrete services from BigCreek Concrete Alpharetta. Driveways, patios, stamped concrete, slabs and repairs. Call +16785786829 for an estimate.',
 };
 

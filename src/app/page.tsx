@@ -8,7 +8,7 @@ import LocationsGrid from '@/components/LocationsGrid';
 const pageData = getPageBySlug('/')!;
 
 export const metadata: Metadata = {
-  title: pageData?.seoTitle || 'Concrete Contractor Alpharetta GA | BigCreek Concrete Alpharetta',
+  title: pageData?.seoTitle || 'Concrete Contractor Alpharetta GA',
   description: pageData?.metaDesc || 'BigCreek Concrete Alpharetta is an Alpharetta, GA concrete contractor for driveways, patios, stamped concrete and repairs. Call +16785786829 for a free estimate.',
 };
 

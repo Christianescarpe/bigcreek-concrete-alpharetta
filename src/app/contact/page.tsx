@@ -7,7 +7,7 @@ import PageSectionsRenderer from '@/components/PageSectionsRenderer';
 const pageData = getPageBySlug('/contact/')!;
 
 export const metadata: Metadata = {
-  title: pageData?.seoTitle || 'Contact BigCreek Concrete Alpharetta | Free Concrete Estimates',
+  title: pageData?.seoTitle || 'Contact BigCreek Concrete Alpharetta',
   description: pageData?.metaDesc || 'Contact BigCreek Concrete Alpharetta at +16785786829 or visit 3200 Webb Bridge Rd, Alpharetta, GA 30005 for a free residential or commercial concrete estimate.',
 };
 

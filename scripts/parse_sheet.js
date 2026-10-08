@@ -62,7 +62,7 @@ const pages = rows.map((r, i) => {
   return {
     id: i + 1,
     pageTitle: r['Page Title'] || '',
-    seoTitle: r['SEO Title'] || '',
+    seoTitle: (r['SEO Title'] || '').split('|')[0].trim(),
     metaDesc: r['Meta Description'] || '',
     slug: slug,
     category: category,

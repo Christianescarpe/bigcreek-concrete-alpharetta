@@ -4,7 +4,7 @@ import HeroSection from '@/components/HeroSection';
 import BlogGrid from '@/components/BlogGrid';
 
 export const metadata: Metadata = {
-  title: 'Concrete Guides & Knowledge Base | BigCreek Concrete Alpharetta',
+  title: 'Concrete Guides & Knowledge Base',
   description: 'Expert guides, driveway cost breakdowns, stamped concrete comparisons, curing timelines and crack prevention tips from BigCreek Concrete Alpharetta.',
 };
 

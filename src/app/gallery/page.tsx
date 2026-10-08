@@ -7,7 +7,7 @@ import PageSectionsRenderer from '@/components/PageSectionsRenderer';
 const pageData = getPageBySlug('/gallery/')!;
 
 export const metadata: Metadata = {
-  title: pageData?.seoTitle || 'Concrete Project Gallery | BigCreek Concrete Alpharetta',
+  title: pageData?.seoTitle || 'Concrete Project Gallery',
   description: pageData?.metaDesc || 'View photos of concrete driveways, patios, stamped concrete, walkways and commercial flatwork completed by BigCreek Concrete Alpharetta. Call +16785786829.',
 };
 

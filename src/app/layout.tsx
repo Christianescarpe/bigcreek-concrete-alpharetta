@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import MobileCallBar from '@/components/MobileCallBar';
 
 export const metadata: Metadata = {
-  title: 'Concrete Contractor Alpharetta GA | BigCreek Concrete Alpharetta',
+  title: 'Concrete Contractor Alpharetta GA',
   description: 'BigCreek Concrete Alpharetta is an Alpharetta, GA concrete contractor for driveways, patios, stamped concrete and repairs. Call +16785786829 for a free estimate.',
   metadataBase: new URL('https://bigcreekconcretealpharetta.com'),
   verification: {

@@ -8,7 +8,7 @@ import LocationsGrid from '@/components/LocationsGrid';
 const pageData = getPageBySlug('/service-areas/')!;
 
 export const metadata: Metadata = {
-  title: pageData?.seoTitle || 'Concrete Contractor Service Areas | BigCreek Concrete Alpharetta',
+  title: pageData?.seoTitle || 'Concrete Contractor Service Areas',
   description: pageData?.metaDesc || 'Concrete contractor serving Alpharetta, Sandy Springs, Roswell, Johns Creek, Brookhaven and surrounding North Atlanta communities. Call +16785786829.',
 };
 
