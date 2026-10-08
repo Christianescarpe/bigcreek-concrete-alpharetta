@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: 'Concrete Contractor Alpharetta GA | BigCreek Concrete Alpharetta',
   description: 'BigCreek Concrete Alpharetta is an Alpharetta, GA concrete contractor for driveways, patios, stamped concrete and repairs. Call +16785786829 for a free estimate.',
   metadataBase: new URL('https://bigcreekconcretealpharetta.com'),
+  verification: {
+    google: 'So48Rskoo0ouM8R9UIquT_NgnTnWATfhMe_oOF_hBA0',
+  },
 };
 
 export default function RootLayout({
