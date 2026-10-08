@@ -22,6 +22,7 @@ export function generateStaticParams() {
 }
 
 import LocationsGrid from '@/components/LocationsGrid';
+import { getBreadcrumbSchema, getFaqSchema, CANONICAL_DOMAIN } from '@/lib/schema';
 
 export function generateMetadata({ params }: CityPageProps): Metadata {
   const slug = `/service-areas/${params.city}/`;
@@ -30,6 +31,21 @@ export function generateMetadata({ params }: CityPageProps): Metadata {
   return {
     title: page.seoTitle,
     description: page.metaDesc,
+    alternates: {
+      canonical: slug,
+    },
+    openGraph: {
+      title: page.seoTitle,
+      description: page.metaDesc,
+      url: `${CANONICAL_DOMAIN}${slug}`,
+      images: [{ url: '/images/hero.webp', width: 1200, height: 630, alt: page.pageTitle }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: page.seoTitle,
+      description: page.metaDesc,
+      images: ['/images/hero.webp'],
+    },
   };
 }
 
@@ -44,8 +60,28 @@ export default function CityPage({ params }: CityPageProps) {
   const parsed = parsePageSections(page.html);
   const cleanTitle = page.pageTitle.replace(/^Concrete Contractor in /i, '');
 
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Service Areas', url: '/service-areas/' },
+    { name: cleanTitle, url: slug }
+  ]);
+
+  const allFaqs = parsed.sections.flatMap(s => s.faqs || []);
+  const faqSchema = allFaqs.length > 0 ? getFaqSchema(allFaqs) : null;
+
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       <HeroSection 
         h1={parsed.h1}
         heroBody={parsed.heroBody}
@@ -63,3 +99,4 @@ export default function CityPage({ params }: CityPageProps) {
     </div>
   );
 }
+

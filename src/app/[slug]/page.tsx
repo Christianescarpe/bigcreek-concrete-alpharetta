@@ -28,13 +28,31 @@ export function generateStaticParams() {
     }));
 }
 
+import { getServiceSchema, getBreadcrumbSchema, getFaqSchema, CANONICAL_DOMAIN } from '@/lib/schema';
+
 export function generateMetadata({ params }: ServicePageProps): Metadata {
   const slug = `/${params.slug}/`;
   const page = getPageBySlug(slug) || getPageBySlug(`/${params.slug}`);
   if (!page) return {};
+  const imgSrc = serviceImages[page.slug] || '/images/hero.webp';
   return {
     title: page.seoTitle,
     description: page.metaDesc,
+    alternates: {
+      canonical: slug,
+    },
+    openGraph: {
+      title: page.seoTitle,
+      description: page.metaDesc,
+      url: `${CANONICAL_DOMAIN}${slug}`,
+      images: [{ url: imgSrc, width: 1200, height: 630, alt: page.pageTitle }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: page.seoTitle,
+      description: page.metaDesc,
+      images: [imgSrc],
+    },
   };
 }
 
@@ -49,8 +67,34 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
   const parsed = parsePageSections(page.html);
   const imgSrc = serviceImages[page.slug] || '/images/hero.webp';
 
+  const breadcrumbs = getBreadcrumbSchema([
+    { name: 'Home', url: '/' },
+    { name: 'Concrete Services', url: '/concrete-services/' },
+    { name: page.pageTitle, url: slug }
+  ]);
+
+  const serviceSchema = getServiceSchema(page.pageTitle, page.metaDesc, slug, imgSrc);
+
+  const allFaqs = parsed.sections.flatMap(s => s.faqs || []);
+  const faqSchema = allFaqs.length > 0 ? getFaqSchema(allFaqs) : null;
+
   return (
     <div className="min-h-screen">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbs) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+
       <HeroSection 
         h1={parsed.h1}
         heroBody={parsed.heroBody}
@@ -65,3 +109,4 @@ export default function ServiceDetailPage({ params }: ServicePageProps) {
     </div>
   );
 }
+
