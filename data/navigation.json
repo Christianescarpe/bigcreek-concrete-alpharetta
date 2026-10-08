@@ -1,0 +1,160 @@
+{
+  "services": [
+    {
+      "title": "Concrete Services",
+      "slug": "/concrete-services/"
+    },
+    {
+      "title": "Concrete Driveways",
+      "slug": "/concrete-driveways/"
+    },
+    {
+      "title": "Driveway Replacement",
+      "slug": "/concrete-driveway-replacement/"
+    },
+    {
+      "title": "Concrete Patios",
+      "slug": "/concrete-patios/"
+    },
+    {
+      "title": "Stamped Concrete",
+      "slug": "/stamped-concrete/"
+    },
+    {
+      "title": "Decorative Concrete",
+      "slug": "/decorative-concrete/"
+    },
+    {
+      "title": "Concrete Walkways",
+      "slug": "/concrete-walkways/"
+    },
+    {
+      "title": "Concrete Steps",
+      "slug": "/concrete-steps/"
+    },
+    {
+      "title": "Concrete Slabs",
+      "slug": "/concrete-slabs/"
+    },
+    {
+      "title": "Concrete Foundations",
+      "slug": "/concrete-foundations/"
+    },
+    {
+      "title": "Concrete Retaining Walls",
+      "slug": "/concrete-retaining-walls/"
+    },
+    {
+      "title": "Concrete Pool Decks",
+      "slug": "/concrete-pool-decks/"
+    },
+    {
+      "title": "Concrete Repair",
+      "slug": "/concrete-repair/"
+    },
+    {
+      "title": "Concrete Resurfacing",
+      "slug": "/concrete-resurfacing/"
+    },
+    {
+      "title": "Commercial Concrete",
+      "slug": "/commercial-concrete/"
+    },
+    {
+      "title": "How Much Does a Concrete Driveway Cost in Alpharetta, GA?",
+      "slug": "/blog/concrete-driveway-cost/"
+    },
+    {
+      "title": "Stamped Concrete vs. Pavers: Pros and Cons",
+      "slug": "/blog/stamped-concrete-vs-pavers/"
+    },
+    {
+      "title": "How Much Does a Concrete Patio Cost?",
+      "slug": "/blog/concrete-patio-cost/"
+    },
+    {
+      "title": "How Long Does Concrete Take to Cure?",
+      "slug": "/blog/concrete-curing-time/"
+    },
+    {
+      "title": "How Thick Should a Residential Concrete Slab Be?",
+      "slug": "/blog/concrete-slab-thickness/"
+    },
+    {
+      "title": "How to Prevent Concrete Cracks",
+      "slug": "/blog/prevent-concrete-cracks/"
+    }
+  ],
+  "locations": [
+    {
+      "title": "Service Areas",
+      "slug": "/service-areas/"
+    },
+    {
+      "title": "Concrete Contractor in Alpharetta, GA",
+      "slug": "/service-areas/alpharetta-ga/"
+    },
+    {
+      "title": "Concrete Contractor in Sandy Springs, GA",
+      "slug": "/service-areas/sandy-springs-ga/"
+    },
+    {
+      "title": "Concrete Contractor in Brookhaven, GA",
+      "slug": "/service-areas/brookhaven-ga/"
+    },
+    {
+      "title": "Concrete Contractor in Chamblee, GA",
+      "slug": "/service-areas/chamblee-ga/"
+    },
+    {
+      "title": "Concrete Contractor in Doraville, GA",
+      "slug": "/service-areas/doraville-ga/"
+    },
+    {
+      "title": "Concrete Contractor in Peachtree Corners, GA",
+      "slug": "/service-areas/peachtree-corners-ga/"
+    },
+    {
+      "title": "Concrete Contractor in Norcross, GA",
+      "slug": "/service-areas/norcross-ga/"
+    },
+    {
+      "title": "Concrete Contractor in Roswell, GA",
+      "slug": "/service-areas/roswell-ga/"
+    },
+    {
+      "title": "Concrete Contractor in Johns Creek, GA",
+      "slug": "/service-areas/johns-creek-ga/"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "How Much Does a Concrete Driveway Cost in Alpharetta, GA?",
+      "slug": "/blog/concrete-driveway-cost/"
+    },
+    {
+      "title": "Concrete Driveway Replacement vs. Repair: Which Is Right for You?",
+      "slug": "/blog/driveway-repair-vs-replacement/"
+    },
+    {
+      "title": "Stamped Concrete vs. Pavers: Pros and Cons",
+      "slug": "/blog/stamped-concrete-vs-pavers/"
+    },
+    {
+      "title": "How Much Does a Concrete Patio Cost?",
+      "slug": "/blog/concrete-patio-cost/"
+    },
+    {
+      "title": "How Long Does Concrete Take to Cure?",
+      "slug": "/blog/concrete-curing-time/"
+    },
+    {
+      "title": "How Thick Should a Residential Concrete Slab Be?",
+      "slug": "/blog/concrete-slab-thickness/"
+    },
+    {
+      "title": "How to Prevent Concrete Cracks",
+      "slug": "/blog/prevent-concrete-cracks/"
+    }
+  ]
+}
